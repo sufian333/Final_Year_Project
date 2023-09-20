@@ -1,0 +1,18 @@
+----------------------------------Execution of Multiple Ardrones-----------------------------
+
+Launch the tum_simulator for multiple drones by following instruction.
+Copy the tum_simulator_multiple package in the src folder of tum_simulator_ws .
+Open the terminal and write following commands.
+$ cd tum_simulator_ws
+$ catkin_make
+$ source devel/setup.bash
+$ roslaunch cvg_sim_gazebo testworld_with_three_ardrone.launch 
+
+You will see 3 drones in the gazebo world.
+Now go to catkin_ws and launch the file to fly the 3 drones on desired trajectory autonomously by following commands.
+Open new terminal and execute following commands.
+$ cd catkin_ws
+$ source devel/setup.bash
+$ rosrun ardrone_test up_and_away 
+
+You will see 3 drones flying in gazebo.
